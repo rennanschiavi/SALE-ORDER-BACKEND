@@ -4,7 +4,7 @@ namespace sales;
 
 entity SalesOrderHeaders: managed {
     key id: UUID;
-    customer: Association to Costumers;
+    customer: Association to Customers;
     totalAmount: Decimal(15,2);
     items: composition of many SalesOrderItems on items.header = $self;
 }
@@ -17,7 +17,7 @@ entity SalesOrderItems {
     price: Decimal(15,2);
 }
 
-entity Costumers {
+entity Customers {
     key id: UUID;
     firstname: String(20);
     lastname: String(200);

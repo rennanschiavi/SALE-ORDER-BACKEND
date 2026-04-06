@@ -1,0 +1,19 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2",
+    "git-commit-msg-linter": "^5.0.8"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "dev": "cds watch"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
