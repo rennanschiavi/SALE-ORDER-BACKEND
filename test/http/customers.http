@@ -1,6 +1,6 @@
 @localhost=localhost:4004/odata/v4/mainservice
 
-@id=aeb8a15a-6d81-4c5a-a72d-540934911b9c
+@id=fdf2fddc-2f70-46a9-806c-6f5d40a3b3bd
 
 
 GET http://{{localhost}}/Customers

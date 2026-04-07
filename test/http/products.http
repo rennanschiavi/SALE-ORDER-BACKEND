@@ -1,0 +1,28 @@
+@localhost=localhost:4004/odata/v4/mainservice
+@productid=c7b7c471-5b96-431f-a361-e5ed10ad74e7
+
+GET http://{{localhost}}/Products
+Content-Type: application/json
+
+###
+
+POST http://{{localhost}}/Products
+Content-Type: application/json
+
+{
+"id":"{{productid}}",
+"name":"Iphone",
+"price": "2999.99",
+}
+
+###
+DELETE http://{{localhost}}/Products(id={{productid}})
+Content-Type: application/json
+
+###
+
+PUT http://{{localhost}}/Products(id={{productid}})
+Content-Type: application/json
+{
+
+}
